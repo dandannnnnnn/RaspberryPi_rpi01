@@ -3,18 +3,16 @@
 	"tasks": [
 		{
 			"type": "shell",
-			"label": "C/C++: aarch64-linux-gnu-gcc build active file",
-			"command": "/usr/bin/aarch64-linux-gnu-gcc",
+			"label": "C/C++: gcc build active file",
+			"command": "/usr/bin/gcc",
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
-				"/home/pi/Documents/C-Files/RaspberryPi_rpi01/main.c",
-				"/home/pi/Documents/C-Files/RaspberryPi_rpi01/Message_Handler.c",
-				"-I/usr/include",
-				"-L/usr/lib/aarch64-linux-gnu",
-				"-lpaho-mqtt3c",
+				"${file}",
 				"-o",
-				"my_program"
+				"${fileDirname}/${fileBasenameNoExtension}",
+				"-I/usr/include/paho-mqtt",
+				"-l/paho-mqtt3c"
 			],
 			"options": {
 				"cwd": "/home/pi/Documents/C-Files/RaspberryPi_rpi01"
