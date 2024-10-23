@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "C/C++: aarch64-linux-gnu-gcc build active file",
+			"command": "/usr/bin/aarch64-linux-gnu-gcc",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"/home/pi/Documents/C-Files/RaspberryPi_rpi01/main.c",
+				"/home/pi/Documents/C-Files/RaspberryPi_rpi01/Message_Handler.c",
+				"-I/usr/include",
+				"-L/usr/lib/aarch64-linux-gnu",
+				"-lpaho-mqtt3c",
+				"-o",
+				"my_program"
+			],
+			"options": {
+				"cwd": "/home/pi/Documents/C-Files/RaspberryPi_rpi01"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Compiler: /usr/bin/aarch64-linux-gnu-gcc"
+		}
+	]
+}
