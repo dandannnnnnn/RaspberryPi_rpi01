@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #Declare the variables
-HOST=192.168.1.23
+HOST=192.168.0.11
 TOPIC=FD/ERROR
 SLEEP=1
 PROG_NAME=DUVEL
