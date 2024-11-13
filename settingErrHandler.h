@@ -20,3 +20,26 @@
 #define errorMSG_LEN		150
 #define errorParam_LEN    150
 #define errorOutput_LEN     2048
+
+//-------------------------------------
+//-------------------------------------
+//Defining fields and default strings below
+//-------------------------------------
+//-------------------------------------
+
+#define sevCode_field 0
+#define app_field 1
+#define errorCode_field 2
+#define errorParam_field 3
+
+#define sevCode_DEFAULT "4"
+#define SEV1 '1'
+#define SEV4 '4'
+#define app_DEFAULT "XXXXXX"
+#define errorCode_DEFAULT "MMMXXXX"
+#define errorMSG_DEFAULT "xxxxxx"
+
+#define fileName "././Error_msg_"
+#define fileName_LEN 130
+#define MAX_RECORDS 10000
+#define timeout 500L
