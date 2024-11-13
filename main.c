@@ -6,8 +6,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <MQTTClient.h>
+//#include <MQTTClient.h> //remove '//' when using RPi
 #include "settingErrHandler.h" //file with array definitions and length
+
+
 
 
 
