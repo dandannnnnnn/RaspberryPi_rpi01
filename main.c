@@ -21,7 +21,7 @@ struct tbl *current = NULL;
 
 //insert_first function here
 void insert_first(char *errorCode, char *errorText) {
-    struct tbl *lnklist = (struct *tbl)malloc(sizeof(struct tbl));
+    struct tbl *lnklist = (struct tbl*)malloc(sizeof(struct tbl));
     strcpy(lnklist -> errorCode, errorCode);
     strcpy(lnklist -> errorText, errorText);
 
@@ -29,6 +29,14 @@ void insert_first(char *errorCode, char *errorText) {
     head = lnklist;
 }
 
+void insert_next(struct tbl *list, char *errorCode, char *errorText) {
+    struct tbl *lnklist = (struct tbl*)malloc(sizeof(struct tbl));
+    strcpy(lnklist -> errorCode, errorCode);
+    strcpy(lnklist -> errorText, errorText);
+
+    lnklist -> next = NULL;
+    list -> next = lnklist;
+}
 
 //printlist function here
 
