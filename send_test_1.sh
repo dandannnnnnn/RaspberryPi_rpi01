@@ -2,9 +2,9 @@
 
 #Declare the variables
 HOST=192.168.0.11
-TOPIC=FD/ERROR
+TOPIC=bashtest
 SLEEP=1
-PROG_NAME=DUVEL
+PROG_NAME=HOEGAARDEN
 SEV_CODE=1
 
 ERROR_CODE_ARRAY1=(  "GEN0001" "GEN0002" "GEN0003" "GEN0004" "GEN0005"
@@ -24,7 +24,7 @@ declare -A ERROR_CODE_ARRAY2=( [0, 0]="FSY0001" [0, 1]="TextFile.txt"
                     [2, 0]="FSY0003" [2, 1]="TextFile.txt"
                     [3, 0]="FSY0004" [3, 1]="TextFile.txt"
                     [4, 0]="FSY0005" [4, 1]="TextFile.txt"
-                    [5, 0]="USR0001" [5, 1]="Frank Demonie")
+                    [5, 0]="USR0001" [5, 1]="Mikhaela Balaga")
       
 
 # Start the script
